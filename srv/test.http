@@ -1,0 +1,41 @@
+@server=http://localhost:44323
+@username=alice
+@password=
+ 
+ 
+### A_SalesOrder
+# @name A_SalesOrder_GET
+GET {{server}}/odata/v4/zapi-sales-order-srvsample/A_SalesOrder
+Authorization: Basic {{username}}:{{password}}
+ 
+####
+POST {{server}}/odata/v4/zapi-sales-order-srvsample/A_SalesOrder
+Content-Type: application/json
+ 
+{
+  "SalesOrder": "0005400000",
+  "SalesOrderType": "OR",
+  "SalesOrganization": "1710",
+  "DistributionChannel": "10",
+  "OrganizationDivision": "00",
+  "SoldToParty": "17100003",
+  "PurchaseOrderByCustomer": "XYZ",
+  "to_Item": {
+    "results": [
+      {
+        "Material": "TG11",
+        "RequestedQuantity": "5",
+        "RequestedQuantityUnit": "PC"
+      }
+    ]
+  }
+}
+ 
+ 
+### A_SalesOrderItem
+# @name A_SalesOrderItem_GET
+GET {{server}}/odata/v4/zapi-sales-order-srvsample/A_SalesOrderItem
+Authorization: Basic {{username}}:{{password}}
+ 
+ 
+ 

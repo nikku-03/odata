@@ -1,0 +1,6 @@
+ID,orderNo,salesOrderNo,status,totalAmount,customer_ID,createdAt,createdBy,modifiedAt,modifiedBy
+o1,ORD-1001,2,New,1500.00,c1
+o4,ORD-1004,23,New,1500.00,c2
+o5,ORD-1005,24,New,1500.00,c3
+o2,ORD-1002,5000000011,Confirmed,3200.00,c2
+o3,ORD-1003,5000000012,Shipped,7800.00,c1

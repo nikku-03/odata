@@ -1,0 +1,69 @@
+{
+  "name": "odataprac",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "@sap/cds": "^9",
+    "express": "^4",
+    "@sap-cloud-sdk/connectivity": "^4",
+    "@sap-cloud-sdk/http-client": "^4",
+    "@sap-cloud-sdk/resilience": "^4",
+    "@sap/xssec": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": "^9",
+    "cds-plugin-ui5": "^0.13.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-orders": "cds watch --open orders/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-project1": "cds watch --open project1/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-project2": "cds watch --open project2/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "cds": {
+    "requires": {
+      "ZAPI_SALES_ORDER_SRV": {
+        "kind": "odata-v2",
+        "model": "srv/external/ZAPI_SALES_ORDER_SRV",
+        "credentials": {
+          "destination": "S4H",
+          "path": "/sap/opu/odata/sap/API_SALES_ORDER_SRV"
+        },
+        "csrf": true,
+        "csrfInBatch": true
+      },
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "manager1": {
+            "password": "manager123",
+            "roles": [
+              "Manager"
+            ]
+          },
+          "employee1": {
+            "password": "employee123",
+            "roles": [
+              "Employee"
+            ]
+          }
+        }
+      },
+      "[production]": {
+        "auth": "xsuaa"
+      }
+    }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/orders",
+    "app/project1",
+    "app/project1",
+    "app/project2",
+    "app/project1"
+  ]
+}

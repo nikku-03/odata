@@ -1,0 +1,2069 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### A_SalesOrder
+# @name A_SalesOrder_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrder
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrder
+# @name A_SalesOrder_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrder
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "er-8236835",
+  "SalesOrderType": "6835",
+  "SalesOrganization": "6835",
+  "DistributionChannel": "35",
+  "OrganizationDivision": "35",
+  "SalesGroup": "835",
+  "SalesOffice": "6835",
+  "SalesDistrict": "236835",
+  "SoldToParty": "ty-8236835",
+  "CreationDate": "2022-11-10",
+  "CreatedByUser": "User-8236835",
+  "LastChangeDate": "2007-05-15",
+  "SenderBusinessSystemName": "SenderBusinessSystemName-8236835",
+  "ExternalDocumentID": "ExternalDocumentID-8236835",
+  "LastChangeDateTime": "2009-05-18T00:00:00.000Z",
+  "ExternalDocLastChangeDateTime": "2011-03-11T00:00:00.000Z",
+  "PurchaseOrderByCustomer": "PurchaseOrderByCustomer-8236835",
+  "PurchaseOrderByShipToParty": "PurchaseOrderByShipToParty-8236835",
+  "CustomerPurchaseOrderType": "6835",
+  "CustomerPurchaseOrderDate": "2003-03-19",
+  "SalesOrderDate": "2002-04-26",
+  "TotalNetAmount": 276429956949.832,
+  "OverallDeliveryStatus": "5",
+  "TotalBlockStatus": "5",
+  "OverallOrdReltdBillgStatus": "5",
+  "OverallSDDocReferenceStatus": "5",
+  "TransactionCurrency": "36835",
+  "SDDocumentReason": "835",
+  "PricingDate": "2010-09-27",
+  "PriceDetnExchangeRate": 4223.65093,
+  "BillingPlan": "an-8236835",
+  "RequestedDeliveryDate": "2017-02-15",
+  "ShippingCondition": "35",
+  "CompleteDeliveryIsDefined": false,
+  "ShippingType": "35",
+  "HeaderBillingBlockReason": "35",
+  "DeliveryBlockReason": "35",
+  "DeliveryDateTypeRule": "5",
+  "IncotermsClassification": "835",
+  "IncotermsTransferLocation": "ermsTransferLocation-8236835",
+  "IncotermsLocation1": "IncotermsLocation1-8236835",
+  "IncotermsLocation2": "IncotermsLocation2-8236835",
+  "IncotermsVersion": "6835",
+  "CustomerPriceGroup": "35",
+  "PriceListType": "35",
+  "CustomerPaymentTerms": "6835",
+  "PaymentMethod": "5",
+  "FixedValueDate": "2005-07-21",
+  "AssignmentReference": "tReference-8236835",
+  "ReferenceSDDocument": "nt-8236835",
+  "ReferenceSDDocumentCategory": "6835",
+  "AccountingDocExternalReference": "eference-8236835",
+  "CustomerAccountAssignmentGroup": "35",
+  "AccountingExchangeRate": 5161.72379,
+  "CustomerGroup": "35",
+  "AdditionalCustomerGroup1": "835",
+  "AdditionalCustomerGroup2": "835",
+  "AdditionalCustomerGroup3": "835",
+  "AdditionalCustomerGroup4": "835",
+  "AdditionalCustomerGroup5": "835",
+  "SlsDocIsRlvtForProofOfDeliv": false,
+  "CustomerTaxClassification1": "5",
+  "CustomerTaxClassification2": "5",
+  "CustomerTaxClassification3": "5",
+  "CustomerTaxClassification4": "5",
+  "CustomerTaxClassification5": "5",
+  "CustomerTaxClassification6": "5",
+  "CustomerTaxClassification7": "5",
+  "CustomerTaxClassification8": "5",
+  "CustomerTaxClassification9": "5",
+  "TaxDepartureCountry": "835",
+  "VATRegistrationCountry": "835",
+  "SalesOrderApprovalReason": "6835",
+  "SalesDocApprovalStatus": "5",
+  "OverallSDProcessStatus": "5",
+  "TotalCreditCheckStatus": "5",
+  "OverallTotalDeliveryStatus": "5",
+  "OverallSDDocumentRejectionSts": "5",
+  "BillingDocumentDate": "2001-02-03",
+  "ContractAccount": "ount-8236835",
+  "AdditionalValueDays": "35",
+  "CustomerPurchaseOrderSuplmnt": "6835",
+  "ServicesRenderedDate": "2002-04-28",
+  "to_BillingPlan": {
+    "SalesOrder": "n-25005679",
+    "BillingPlan": "n-25005679"
+  }
+}
+
+
+### A_SalesOrder
+# @name A_SalesOrder_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrder/er-8236835
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "er-8236835",
+  "SalesOrderType": "6835",
+  "SalesOrganization": "6835",
+  "DistributionChannel": "35",
+  "OrganizationDivision": "35",
+  "SalesGroup": "835",
+  "SalesOffice": "6835",
+  "SalesDistrict": "236835",
+  "SoldToParty": "ty-8236835",
+  "CreationDate": "2022-11-10",
+  "CreatedByUser": "User-8236835",
+  "LastChangeDate": "2007-05-15",
+  "SenderBusinessSystemName": "SenderBusinessSystemName-8236835",
+  "ExternalDocumentID": "ExternalDocumentID-8236835",
+  "LastChangeDateTime": "2009-05-18T00:00:00.000Z",
+  "ExternalDocLastChangeDateTime": "2011-03-11T00:00:00.000Z",
+  "PurchaseOrderByCustomer": "PurchaseOrderByCustomer-8236835",
+  "PurchaseOrderByShipToParty": "PurchaseOrderByShipToParty-8236835",
+  "CustomerPurchaseOrderType": "6835",
+  "CustomerPurchaseOrderDate": "2003-03-19",
+  "SalesOrderDate": "2002-04-26",
+  "TotalNetAmount": 276429956949.832,
+  "OverallDeliveryStatus": "5",
+  "TotalBlockStatus": "5",
+  "OverallOrdReltdBillgStatus": "5",
+  "OverallSDDocReferenceStatus": "5",
+  "TransactionCurrency": "36835",
+  "SDDocumentReason": "835",
+  "PricingDate": "2010-09-27",
+  "PriceDetnExchangeRate": 4223.65093,
+  "BillingPlan": "an-8236835",
+  "RequestedDeliveryDate": "2017-02-15",
+  "ShippingCondition": "35",
+  "CompleteDeliveryIsDefined": false,
+  "ShippingType": "35",
+  "HeaderBillingBlockReason": "35",
+  "DeliveryBlockReason": "35",
+  "DeliveryDateTypeRule": "5",
+  "IncotermsClassification": "835",
+  "IncotermsTransferLocation": "ermsTransferLocation-8236835",
+  "IncotermsLocation1": "IncotermsLocation1-8236835",
+  "IncotermsLocation2": "IncotermsLocation2-8236835",
+  "IncotermsVersion": "6835",
+  "CustomerPriceGroup": "35",
+  "PriceListType": "35",
+  "CustomerPaymentTerms": "6835",
+  "PaymentMethod": "5",
+  "FixedValueDate": "2005-07-21",
+  "AssignmentReference": "tReference-8236835",
+  "ReferenceSDDocument": "nt-8236835",
+  "ReferenceSDDocumentCategory": "6835",
+  "AccountingDocExternalReference": "eference-8236835",
+  "CustomerAccountAssignmentGroup": "35",
+  "AccountingExchangeRate": 5161.72379,
+  "CustomerGroup": "35",
+  "AdditionalCustomerGroup1": "835",
+  "AdditionalCustomerGroup2": "835",
+  "AdditionalCustomerGroup3": "835",
+  "AdditionalCustomerGroup4": "835",
+  "AdditionalCustomerGroup5": "835",
+  "SlsDocIsRlvtForProofOfDeliv": false,
+  "CustomerTaxClassification1": "5",
+  "CustomerTaxClassification2": "5",
+  "CustomerTaxClassification3": "5",
+  "CustomerTaxClassification4": "5",
+  "CustomerTaxClassification5": "5",
+  "CustomerTaxClassification6": "5",
+  "CustomerTaxClassification7": "5",
+  "CustomerTaxClassification8": "5",
+  "CustomerTaxClassification9": "5",
+  "TaxDepartureCountry": "835",
+  "VATRegistrationCountry": "835",
+  "SalesOrderApprovalReason": "6835",
+  "SalesDocApprovalStatus": "5",
+  "OverallSDProcessStatus": "5",
+  "TotalCreditCheckStatus": "5",
+  "OverallTotalDeliveryStatus": "5",
+  "OverallSDDocumentRejectionSts": "5",
+  "BillingDocumentDate": "2001-02-03",
+  "ContractAccount": "ount-8236835",
+  "AdditionalValueDays": "35",
+  "CustomerPurchaseOrderSuplmnt": "6835",
+  "ServicesRenderedDate": "2002-04-28",
+  "to_BillingPlan": {
+    "SalesOrder": "n-25005679",
+    "BillingPlan": "n-25005679"
+  }
+}
+
+
+### A_SalesOrder
+# @name A_SalesOrder_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrder/er-8236835
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderBillingPlan
+# @name A_SalesOrderBillingPlan_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderBillingPlan
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderBillingPlan
+# @name A_SalesOrderBillingPlan_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderBillingPlan
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "n-25005679",
+  "BillingPlan": "n-25005679",
+  "BillingPlanStartDate": "2010-03-15",
+  "BillingPlanStartDateRule": "79",
+  "ReferenceBillingPlan": "n-25005679",
+  "BillingPlanCategory": "9",
+  "BillingPlanType": "79",
+  "BillingPlanEndDate": "2002-04-02",
+  "BillingPlanEndDateRule": "79",
+  "BillingPlanSearchTerm": "m-25005679",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderBillingPlan
+# @name A_SalesOrderBillingPlan_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderBillingPlan(SalesOrder='n-25005679',BillingPlan='n-25005679')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "n-25005679",
+  "BillingPlan": "n-25005679",
+  "BillingPlanStartDate": "2010-03-15",
+  "BillingPlanStartDateRule": "79",
+  "ReferenceBillingPlan": "n-25005679",
+  "BillingPlanCategory": "9",
+  "BillingPlanType": "79",
+  "BillingPlanEndDate": "2002-04-02",
+  "BillingPlanEndDateRule": "79",
+  "BillingPlanSearchTerm": "m-25005679",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderBillingPlan
+# @name A_SalesOrderBillingPlan_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderBillingPlan(SalesOrder='n-25005679',BillingPlan='n-25005679')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderBillingPlanItem
+# @name A_SalesOrderBillingPlanItem_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderBillingPlanItem
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderBillingPlanItem
+# @name A_SalesOrderBillingPlanItem_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderBillingPlanItem
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "tem-947092",
+  "BillingPlan": "tem-947092",
+  "BillingPlanItem": "947092",
+  "BillingPlanDateCategory": "92",
+  "BillingPlanBillingDate": "2006-01-31",
+  "BillingPlanAmount": 5663579557277.543,
+  "TransactionCurrency": "47092",
+  "BillingPlanAmountPercent": 272.61,
+  "CustomerPaymentTerms": "7092",
+  "ProposedBillingDocumentType": "7092",
+  "BillingPlanDateDescriptionCode": "7092",
+  "BillingBlockReason": "92",
+  "BillingPlanServiceStartDate": "2017-11-22",
+  "BillingPlanServiceEndDate": "2023-03-21",
+  "BillingPlanRelatedBillgStatus": "2",
+  "BillingPlanType": "92",
+  "AdoptingBillingDateID": "2",
+  "BillingPlanBillingRule": "2",
+  "BillingPlanMilestoneUsage": "47092",
+  "BillgPlnDteCorrectionRfndType": "2",
+  "AccountingExchangeRate": 9684.08831,
+  "PostponementReason": "PostponementReason-947092",
+  "to_BillingPlan": {
+    "SalesOrder": "n-25005679",
+    "BillingPlan": "n-25005679"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderBillingPlanItem
+# @name A_SalesOrderBillingPlanItem_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderBillingPlanItem(SalesOrder='tem-947092',BillingPlan='tem-947092',BillingPlanItem='947092')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "tem-947092",
+  "BillingPlan": "tem-947092",
+  "BillingPlanItem": "947092",
+  "BillingPlanDateCategory": "92",
+  "BillingPlanBillingDate": "2006-01-31",
+  "BillingPlanAmount": 5663579557277.543,
+  "TransactionCurrency": "47092",
+  "BillingPlanAmountPercent": 272.61,
+  "CustomerPaymentTerms": "7092",
+  "ProposedBillingDocumentType": "7092",
+  "BillingPlanDateDescriptionCode": "7092",
+  "BillingBlockReason": "92",
+  "BillingPlanServiceStartDate": "2017-11-22",
+  "BillingPlanServiceEndDate": "2023-03-21",
+  "BillingPlanRelatedBillgStatus": "2",
+  "BillingPlanType": "92",
+  "AdoptingBillingDateID": "2",
+  "BillingPlanBillingRule": "2",
+  "BillingPlanMilestoneUsage": "47092",
+  "BillgPlnDteCorrectionRfndType": "2",
+  "AccountingExchangeRate": 9684.08831,
+  "PostponementReason": "PostponementReason-947092",
+  "to_BillingPlan": {
+    "SalesOrder": "n-25005679",
+    "BillingPlan": "n-25005679"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderBillingPlanItem
+# @name A_SalesOrderBillingPlanItem_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderBillingPlanItem(SalesOrder='tem-947092',BillingPlan='tem-947092',BillingPlanItem='947092')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItem
+# @name A_SalesOrderItem_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItem
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItem
+# @name A_SalesOrderItem_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItem
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "m-18589787",
+  "SalesOrderItem": "589787",
+  "HigherLevelItem": "589787",
+  "HigherLevelItemUsage": "7",
+  "SalesOrderItemCategory": "9787",
+  "SalesOrderItemText": "SalesOrderItemText-18589787",
+  "PurchaseOrderByCustomer": "PurchaseOrderByCustomer-18589787",
+  "PurchaseOrderByShipToParty": "PurchaseOrderByShipToParty-18589787",
+  "UnderlyingPurchaseOrderItem": "589787",
+  "ExternalItemID": "ExternalItemID-18589787",
+  "Material": "Material-18589787",
+  "MaterialByCustomer": "MaterialByCustomer-18589787",
+  "PricingDate": "2011-12-31",
+  "PricingReferenceMaterial": "PricingReferenceMaterial-18589787",
+  "BillingPlan": "n-18589787",
+  "RequestedQuantity": 568228606553.5,
+  "RequestedQuantityUnit": "787",
+  "RequestedQuantitySAPUnit": "787",
+  "RequestedQuantityISOUnit": "787",
+  "OrderQuantityUnit": "787",
+  "OrderQuantitySAPUnit": "787",
+  "OrderQuantityISOUnit": "787",
+  "ConfdDelivQtyInOrderQtyUnit": 600036625619.162,
+  "ItemGrossWeight": 958716085425.145,
+  "ItemNetWeight": 490461100118.038,
+  "ItemWeightUnit": "787",
+  "ItemWeightSAPUnit": "787",
+  "ItemWeightISOUnit": "787",
+  "ItemVolume": 647208207613.373,
+  "ItemVolumeUnit": "787",
+  "ItemVolumeSAPUnit": "787",
+  "ItemVolumeISOUnit": "787",
+  "TransactionCurrency": "89787",
+  "NetAmount": 7630940207779.696,
+  "TotalSDDocReferenceStatus": "7",
+  "SDDocReferenceStatus": "7",
+  "MaterialSubstitutionReason": "9787",
+  "MaterialGroup": "-18589787",
+  "MaterialPricingGroup": "87",
+  "AdditionalMaterialGroup1": "787",
+  "AdditionalMaterialGroup2": "787",
+  "AdditionalMaterialGroup3": "787",
+  "AdditionalMaterialGroup4": "787",
+  "AdditionalMaterialGroup5": "787",
+  "BillingDocumentDate": "2010-06-22",
+  "ContractAccount": "unt-18589787",
+  "AdditionalValueDays": "87",
+  "ServicesRenderedDate": "2009-09-08",
+  "Batch": "h-18589787",
+  "ProductionPlant": "9787",
+  "OriginalPlant": "9787",
+  "AltvBsdConfSubstitutionStatus": "7",
+  "StorageLocation": "9787",
+  "DeliveryGroup": "787",
+  "ShippingPoint": "9787",
+  "ShippingType": "87",
+  "DeliveryPriority": "87",
+  "DeliveryDateQuantityIsFixed": false,
+  "DeliveryDateTypeRule": "7",
+  "IncotermsClassification": "787",
+  "IncotermsTransferLocation": "rmsTransferLocation-18589787",
+  "IncotermsLocation1": "IncotermsLocation1-18589787",
+  "IncotermsLocation2": "IncotermsLocation2-18589787",
+  "TaxAmount": 38302039063.057,
+  "ProductTaxClassification1": "7",
+  "ProductTaxClassification2": "7",
+  "ProductTaxClassification3": "7",
+  "ProductTaxClassification4": "7",
+  "ProductTaxClassification5": "7",
+  "ProductTaxClassification6": "7",
+  "ProductTaxClassification7": "7",
+  "ProductTaxClassification8": "7",
+  "ProductTaxClassification9": "7",
+  "MatlAccountAssignmentGroup": "87",
+  "CostAmount": 11113656742.773,
+  "CustomerPaymentTerms": "9787",
+  "FixedValueDate": "2002-04-07",
+  "CustomerGroup": "87",
+  "SalesDocumentRjcnReason": "87",
+  "ItemBillingBlockReason": "87",
+  "SlsDocIsRlvtForProofOfDeliv": false,
+  "WBSElement": "WBSElement-18589787",
+  "ProfitCenter": "r-18589787",
+  "AccountingExchangeRate": 5088.36182,
+  "ReferenceSDDocument": "t-18589787",
+  "ReferenceSDDocumentItem": "589787",
+  "SDProcessStatus": "7",
+  "DeliveryStatus": "7",
+  "OrderRelatedBillingStatus": "7",
+  "Subtotal1Amount": 50674109029.698,
+  "Subtotal2Amount": 3181129202.552,
+  "Subtotal3Amount": 5204164381.817,
+  "Subtotal4Amount": 48100254497.677,
+  "Subtotal5Amount": 68713488462.06,
+  "Subtotal6Amount": 9876325751.671,
+  "RequirementSegment": "RequirementSegment-18589787",
+  "to_BillingPlan": {
+    "SalesOrder": "n-24733347",
+    "SalesOrderItem": "733347",
+    "BillingPlan": "n-24733347"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderItem
+# @name A_SalesOrderItem_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItem(SalesOrder='m-18589787',SalesOrderItem='589787')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "m-18589787",
+  "SalesOrderItem": "589787",
+  "HigherLevelItem": "589787",
+  "HigherLevelItemUsage": "7",
+  "SalesOrderItemCategory": "9787",
+  "SalesOrderItemText": "SalesOrderItemText-18589787",
+  "PurchaseOrderByCustomer": "PurchaseOrderByCustomer-18589787",
+  "PurchaseOrderByShipToParty": "PurchaseOrderByShipToParty-18589787",
+  "UnderlyingPurchaseOrderItem": "589787",
+  "ExternalItemID": "ExternalItemID-18589787",
+  "Material": "Material-18589787",
+  "MaterialByCustomer": "MaterialByCustomer-18589787",
+  "PricingDate": "2011-12-31",
+  "PricingReferenceMaterial": "PricingReferenceMaterial-18589787",
+  "BillingPlan": "n-18589787",
+  "RequestedQuantity": 568228606553.5,
+  "RequestedQuantityUnit": "787",
+  "RequestedQuantitySAPUnit": "787",
+  "RequestedQuantityISOUnit": "787",
+  "OrderQuantityUnit": "787",
+  "OrderQuantitySAPUnit": "787",
+  "OrderQuantityISOUnit": "787",
+  "ConfdDelivQtyInOrderQtyUnit": 600036625619.162,
+  "ItemGrossWeight": 958716085425.145,
+  "ItemNetWeight": 490461100118.038,
+  "ItemWeightUnit": "787",
+  "ItemWeightSAPUnit": "787",
+  "ItemWeightISOUnit": "787",
+  "ItemVolume": 647208207613.373,
+  "ItemVolumeUnit": "787",
+  "ItemVolumeSAPUnit": "787",
+  "ItemVolumeISOUnit": "787",
+  "TransactionCurrency": "89787",
+  "NetAmount": 7630940207779.696,
+  "TotalSDDocReferenceStatus": "7",
+  "SDDocReferenceStatus": "7",
+  "MaterialSubstitutionReason": "9787",
+  "MaterialGroup": "-18589787",
+  "MaterialPricingGroup": "87",
+  "AdditionalMaterialGroup1": "787",
+  "AdditionalMaterialGroup2": "787",
+  "AdditionalMaterialGroup3": "787",
+  "AdditionalMaterialGroup4": "787",
+  "AdditionalMaterialGroup5": "787",
+  "BillingDocumentDate": "2010-06-22",
+  "ContractAccount": "unt-18589787",
+  "AdditionalValueDays": "87",
+  "ServicesRenderedDate": "2009-09-08",
+  "Batch": "h-18589787",
+  "ProductionPlant": "9787",
+  "OriginalPlant": "9787",
+  "AltvBsdConfSubstitutionStatus": "7",
+  "StorageLocation": "9787",
+  "DeliveryGroup": "787",
+  "ShippingPoint": "9787",
+  "ShippingType": "87",
+  "DeliveryPriority": "87",
+  "DeliveryDateQuantityIsFixed": false,
+  "DeliveryDateTypeRule": "7",
+  "IncotermsClassification": "787",
+  "IncotermsTransferLocation": "rmsTransferLocation-18589787",
+  "IncotermsLocation1": "IncotermsLocation1-18589787",
+  "IncotermsLocation2": "IncotermsLocation2-18589787",
+  "TaxAmount": 38302039063.057,
+  "ProductTaxClassification1": "7",
+  "ProductTaxClassification2": "7",
+  "ProductTaxClassification3": "7",
+  "ProductTaxClassification4": "7",
+  "ProductTaxClassification5": "7",
+  "ProductTaxClassification6": "7",
+  "ProductTaxClassification7": "7",
+  "ProductTaxClassification8": "7",
+  "ProductTaxClassification9": "7",
+  "MatlAccountAssignmentGroup": "87",
+  "CostAmount": 11113656742.773,
+  "CustomerPaymentTerms": "9787",
+  "FixedValueDate": "2002-04-07",
+  "CustomerGroup": "87",
+  "SalesDocumentRjcnReason": "87",
+  "ItemBillingBlockReason": "87",
+  "SlsDocIsRlvtForProofOfDeliv": false,
+  "WBSElement": "WBSElement-18589787",
+  "ProfitCenter": "r-18589787",
+  "AccountingExchangeRate": 5088.36182,
+  "ReferenceSDDocument": "t-18589787",
+  "ReferenceSDDocumentItem": "589787",
+  "SDProcessStatus": "7",
+  "DeliveryStatus": "7",
+  "OrderRelatedBillingStatus": "7",
+  "Subtotal1Amount": 50674109029.698,
+  "Subtotal2Amount": 3181129202.552,
+  "Subtotal3Amount": 5204164381.817,
+  "Subtotal4Amount": 48100254497.677,
+  "Subtotal5Amount": 68713488462.06,
+  "Subtotal6Amount": 9876325751.671,
+  "RequirementSegment": "RequirementSegment-18589787",
+  "to_BillingPlan": {
+    "SalesOrder": "n-24733347",
+    "SalesOrderItem": "733347",
+    "BillingPlan": "n-24733347"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderItem
+# @name A_SalesOrderItem_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItem(SalesOrder='m-18589787',SalesOrderItem='589787')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemBillingPlan
+# @name A_SalesOrderItemBillingPlan_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemBillingPlan
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemBillingPlan
+# @name A_SalesOrderItemBillingPlan_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemBillingPlan
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "n-24733347",
+  "SalesOrderItem": "733347",
+  "BillingPlan": "n-24733347",
+  "BillingPlanIsInHeader": false,
+  "BillingPlanStartDate": "2019-01-18",
+  "BillingPlanStartDateRule": "47",
+  "ReferenceBillingPlan": "n-24733347",
+  "BillingPlanCategory": "7",
+  "BillingPlanType": "47",
+  "BillingPlanEndDate": "2020-09-21",
+  "BillingPlanEndDateRule": "47",
+  "BillingPlanSearchTerm": "m-24733347",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemBillingPlan
+# @name A_SalesOrderItemBillingPlan_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemBillingPlan(SalesOrder='n-24733347',SalesOrderItem='733347',BillingPlan='n-24733347')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "n-24733347",
+  "SalesOrderItem": "733347",
+  "BillingPlan": "n-24733347",
+  "BillingPlanIsInHeader": false,
+  "BillingPlanStartDate": "2019-01-18",
+  "BillingPlanStartDateRule": "47",
+  "ReferenceBillingPlan": "n-24733347",
+  "BillingPlanCategory": "7",
+  "BillingPlanType": "47",
+  "BillingPlanEndDate": "2020-09-21",
+  "BillingPlanEndDateRule": "47",
+  "BillingPlanSearchTerm": "m-24733347",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemBillingPlan
+# @name A_SalesOrderItemBillingPlan_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemBillingPlan(SalesOrder='n-24733347',SalesOrderItem='733347',BillingPlan='n-24733347')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SlsOrderItemBillingPlanItem
+# @name A_SlsOrderItemBillingPlanItem_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SlsOrderItemBillingPlanItem
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SlsOrderItemBillingPlanItem
+# @name A_SlsOrderItemBillingPlanItem_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SlsOrderItemBillingPlanItem
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "m-21535411",
+  "SalesOrderItem": "535411",
+  "BillingPlan": "m-21535411",
+  "BillingPlanItem": "535411",
+  "BillingPlanDateCategory": "11",
+  "BillingPlanBillingDate": "2005-05-20",
+  "BillingPlanAmount": 1037621919127.623,
+  "TransactionCurrency": "35411",
+  "BillingPlanAmountPercent": 409.76,
+  "CustomerPaymentTerms": "5411",
+  "ProposedBillingDocumentType": "5411",
+  "BillingPlanDateDescriptionCode": "5411",
+  "BillingBlockReason": "11",
+  "BillingPlanServiceStartDate": "2010-01-20",
+  "BillingPlanServiceEndDate": "2006-08-26",
+  "BillingPlanRelatedBillgStatus": "1",
+  "BillingPlanType": "11",
+  "AdoptingBillingDateID": "1",
+  "BillingPlanBillingRule": "1",
+  "BillingPlanMilestoneUsage": "35411",
+  "BillgPlnDteCorrectionRfndType": "1",
+  "AccountingExchangeRate": 6874.77321,
+  "PostponementReason": "PostponementReason-21535411",
+  "to_BillingPlan": {
+    "SalesOrder": "n-24733347",
+    "SalesOrderItem": "733347",
+    "BillingPlan": "n-24733347"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SlsOrderItemBillingPlanItem
+# @name A_SlsOrderItemBillingPlanItem_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SlsOrderItemBillingPlanItem(SalesOrder='m-21535411',SalesOrderItem='535411',BillingPlan='m-21535411',BillingPlanItem='535411')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "m-21535411",
+  "SalesOrderItem": "535411",
+  "BillingPlan": "m-21535411",
+  "BillingPlanItem": "535411",
+  "BillingPlanDateCategory": "11",
+  "BillingPlanBillingDate": "2005-05-20",
+  "BillingPlanAmount": 1037621919127.623,
+  "TransactionCurrency": "35411",
+  "BillingPlanAmountPercent": 409.76,
+  "CustomerPaymentTerms": "5411",
+  "ProposedBillingDocumentType": "5411",
+  "BillingPlanDateDescriptionCode": "5411",
+  "BillingBlockReason": "11",
+  "BillingPlanServiceStartDate": "2010-01-20",
+  "BillingPlanServiceEndDate": "2006-08-26",
+  "BillingPlanRelatedBillgStatus": "1",
+  "BillingPlanType": "11",
+  "AdoptingBillingDateID": "1",
+  "BillingPlanBillingRule": "1",
+  "BillingPlanMilestoneUsage": "35411",
+  "BillgPlnDteCorrectionRfndType": "1",
+  "AccountingExchangeRate": 6874.77321,
+  "PostponementReason": "PostponementReason-21535411",
+  "to_BillingPlan": {
+    "SalesOrder": "n-24733347",
+    "SalesOrderItem": "733347",
+    "BillingPlan": "n-24733347"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SlsOrderItemBillingPlanItem
+# @name A_SlsOrderItemBillingPlanItem_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SlsOrderItemBillingPlanItem(SalesOrder='m-21535411',SalesOrderItem='535411',BillingPlan='m-21535411',BillingPlanItem='535411')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemPartner
+# @name A_SalesOrderItemPartner_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPartner
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemPartner
+# @name A_SalesOrderItemPartner_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPartner
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "rtner-4340",
+  "SalesOrderItem": "r-4340",
+  "PartnerFunction": "40",
+  "PartnerFunctionInternalCode": "40",
+  "Customer": "tomer-4340",
+  "Supplier": "plier-4340",
+  "Personnel": "nel-4340",
+  "ContactPerson": "erson-4340",
+  "ReferenceBusinessPartner": "rtner-4340",
+  "AddressID": "essID-4340",
+  "VATRegistration": "VATRegistration-4340",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemPartner
+# @name A_SalesOrderItemPartner_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPartner(SalesOrder='rtner-4340',SalesOrderItem='r-4340',PartnerFunction='40')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "rtner-4340",
+  "SalesOrderItem": "r-4340",
+  "PartnerFunction": "40",
+  "PartnerFunctionInternalCode": "40",
+  "Customer": "tomer-4340",
+  "Supplier": "plier-4340",
+  "Personnel": "nel-4340",
+  "ContactPerson": "erson-4340",
+  "ReferenceBusinessPartner": "rtner-4340",
+  "AddressID": "essID-4340",
+  "VATRegistration": "VATRegistration-4340",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemPartner
+# @name A_SalesOrderItemPartner_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPartner(SalesOrder='rtner-4340',SalesOrderItem='r-4340',PartnerFunction='40')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemPartnerAddress
+# @name A_SalesOrderItemPartnerAddress_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPartnerAddress
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemPartnerAddress
+# @name A_SalesOrderItemPartnerAddress_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPartnerAddress
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "s-18835600",
+  "SalesOrderItem": "835600",
+  "PartnerFunction": "00",
+  "AddressRepresentationCode": "0",
+  "CorrespondenceLanguage": "00",
+  "AddresseeFullName": "AddresseeFullName-18835600",
+  "OrganizationName1": "OrganizationName1-18835600",
+  "OrganizationName2": "OrganizationName2-18835600",
+  "OrganizationName3": "OrganizationName3-18835600",
+  "OrganizationName4": "OrganizationName4-18835600",
+  "CityName": "CityName-18835600",
+  "DistrictName": "DistrictName-18835600",
+  "PostalCode": "e-18835600",
+  "StreetName": "StreetName-18835600",
+  "StreetPrefixName1": "StreetPrefixName1-18835600",
+  "StreetPrefixName2": "StreetPrefixName2-18835600",
+  "StreetSuffixName1": "StreetSuffixName1-18835600",
+  "StreetSuffixName2": "StreetSuffixName2-18835600",
+  "HouseNumber": "r-18835600",
+  "Country": "600",
+  "Region": "600",
+  "FormOfAddress": "5600",
+  "TaxJurisdiction": "iction-18835600",
+  "TransportZone": "e-18835600",
+  "POBox": "x-18835600",
+  "POBoxPostalCode": "e-18835600",
+  "EmailAddress": "EmailAddress-18835600",
+  "MobilePhoneCountry": "600",
+  "MobileNumber": "MobileNumber-18835600",
+  "PhoneNumberCountry": "600",
+  "PhoneNumber": "PhoneNumber-18835600",
+  "PhoneExtensionNumber": "r-18835600",
+  "FaxNumberCountry": "600",
+  "FaxAreaCodeSubscriberNumber": "aCodeSubscriberNumber-18835600",
+  "FaxExtensionNumber": "r-18835600",
+  "to_Partner": {
+    "SalesOrder": "rtner-4340",
+    "SalesOrderItem": "r-4340",
+    "PartnerFunction": "40"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemPartnerAddress
+# @name A_SalesOrderItemPartnerAddress_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPartnerAddress(SalesOrder='s-18835600',SalesOrderItem='835600',PartnerFunction='00',AddressRepresentationCode='0')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "s-18835600",
+  "SalesOrderItem": "835600",
+  "PartnerFunction": "00",
+  "AddressRepresentationCode": "0",
+  "CorrespondenceLanguage": "00",
+  "AddresseeFullName": "AddresseeFullName-18835600",
+  "OrganizationName1": "OrganizationName1-18835600",
+  "OrganizationName2": "OrganizationName2-18835600",
+  "OrganizationName3": "OrganizationName3-18835600",
+  "OrganizationName4": "OrganizationName4-18835600",
+  "CityName": "CityName-18835600",
+  "DistrictName": "DistrictName-18835600",
+  "PostalCode": "e-18835600",
+  "StreetName": "StreetName-18835600",
+  "StreetPrefixName1": "StreetPrefixName1-18835600",
+  "StreetPrefixName2": "StreetPrefixName2-18835600",
+  "StreetSuffixName1": "StreetSuffixName1-18835600",
+  "StreetSuffixName2": "StreetSuffixName2-18835600",
+  "HouseNumber": "r-18835600",
+  "Country": "600",
+  "Region": "600",
+  "FormOfAddress": "5600",
+  "TaxJurisdiction": "iction-18835600",
+  "TransportZone": "e-18835600",
+  "POBox": "x-18835600",
+  "POBoxPostalCode": "e-18835600",
+  "EmailAddress": "EmailAddress-18835600",
+  "MobilePhoneCountry": "600",
+  "MobileNumber": "MobileNumber-18835600",
+  "PhoneNumberCountry": "600",
+  "PhoneNumber": "PhoneNumber-18835600",
+  "PhoneExtensionNumber": "r-18835600",
+  "FaxNumberCountry": "600",
+  "FaxAreaCodeSubscriberNumber": "aCodeSubscriberNumber-18835600",
+  "FaxExtensionNumber": "r-18835600",
+  "to_Partner": {
+    "SalesOrder": "rtner-4340",
+    "SalesOrderItem": "r-4340",
+    "PartnerFunction": "40"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemPartnerAddress
+# @name A_SalesOrderItemPartnerAddress_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPartnerAddress(SalesOrder='s-18835600',SalesOrderItem='835600',PartnerFunction='00',AddressRepresentationCode='0')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItmPrecdgProcFlow
+# @name A_SalesOrderItmPrecdgProcFlow_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItmPrecdgProcFlow
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItmPrecdgProcFlow
+# @name A_SalesOrderItmPrecdgProcFlow_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItmPrecdgProcFlow
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "w-25865298",
+  "SalesOrderItem": "865298",
+  "DocRelationshipUUID": "25865298-4274-472f-8277-aee7cbffa0ff",
+  "PrecedingDocument": "t-25865298",
+  "PrecedingDocumentItem": "865298",
+  "PrecedingDocumentCategory": "5298",
+  "ProcessFlowLevel": "98",
+  "RelatedProcFlowDocStsFieldName": "ocFlowDocStsFieldName-25865298",
+  "SDProcessStatus": "8",
+  "AccountingTransferStatus": "8",
+  "PrelimBillingDocumentStatus": "8",
+  "CreationDate": "2017-11-16",
+  "CreationTime": "22:59:53",
+  "LastChangeDate": "2021-05-18",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItmPrecdgProcFlow
+# @name A_SalesOrderItmPrecdgProcFlow_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItmPrecdgProcFlow(SalesOrder='w-25865298',SalesOrderItem='865298',DocRelationshipUUID=25865298-4274-472f-8277-aee7cbffa0ff)
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "w-25865298",
+  "SalesOrderItem": "865298",
+  "DocRelationshipUUID": "25865298-4274-472f-8277-aee7cbffa0ff",
+  "PrecedingDocument": "t-25865298",
+  "PrecedingDocumentItem": "865298",
+  "PrecedingDocumentCategory": "5298",
+  "ProcessFlowLevel": "98",
+  "RelatedProcFlowDocStsFieldName": "ocFlowDocStsFieldName-25865298",
+  "SDProcessStatus": "8",
+  "AccountingTransferStatus": "8",
+  "PrelimBillingDocumentStatus": "8",
+  "CreationDate": "2017-11-16",
+  "CreationTime": "22:59:53",
+  "LastChangeDate": "2021-05-18",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItmPrecdgProcFlow
+# @name A_SalesOrderItmPrecdgProcFlow_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItmPrecdgProcFlow(SalesOrder='w-25865298',SalesOrderItem='865298',DocRelationshipUUID=25865298-4274-472f-8277-aee7cbffa0ff)
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemPrElement
+# @name A_SalesOrderItemPrElement_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPrElement
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemPrElement
+# @name A_SalesOrderItemPrElement_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPrElement
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "t-10937547",
+  "SalesOrderItem": "937547",
+  "PricingProcedureStep": "547",
+  "PricingProcedureCounter": "547",
+  "ConditionType": "7547",
+  "PricingDateTime": "eTime-10937547",
+  "PriceConditionDeterminationDte": "2022-01-21",
+  "ConditionCalculationType": "547",
+  "ConditionBaseValue": 645099921411328.1,
+  "ConditionRateValue": 310732722608423.7,
+  "ConditionCurrency": "37547",
+  "ConditionQuantity": 70903,
+  "ConditionQuantityUnit": "547",
+  "ConditionQuantitySAPUnit": "547",
+  "ConditionQuantityISOUnit": "547",
+  "ConditionCategory": "7",
+  "ConditionIsForStatistics": false,
+  "PricingScaleType": "7",
+  "IsRelevantForAccrual": false,
+  "CndnIsRelevantForInvoiceList": "7",
+  "ConditionOrigin": "7",
+  "IsGroupCondition": "7",
+  "ConditionRecord": "d-10937547",
+  "ConditionSequentialNumber": "547",
+  "TaxCode": "47",
+  "WithholdingTaxCode": "47",
+  "CndnRoundingOffDiffAmount": 562.197,
+  "ConditionAmount": 4726439857636.074,
+  "TransactionCurrency": "37547",
+  "ConditionControl": "7",
+  "ConditionInactiveReason": "7",
+  "ConditionClass": "7",
+  "PrcgProcedureCounterForHeader": "547",
+  "FactorForConditionBasisValue": 33.97865190278872,
+  "StructureCondition": "7",
+  "PeriodFactorForCndnBasisValue": 68.94890515267514,
+  "PricingScaleBasis": "547",
+  "ConditionScaleBasisValue": 411000783872592.7,
+  "ConditionScaleBasisUnit": "547",
+  "ConditionScaleBasisCurrency": "37547",
+  "CndnIsRelevantForIntcoBilling": false,
+  "ConditionIsManuallyChanged": false,
+  "ConditionIsForConfiguration": false,
+  "VariantCondition": "VariantCondition-10937547",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemPrElement
+# @name A_SalesOrderItemPrElement_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPrElement(SalesOrder='t-10937547',SalesOrderItem='937547',PricingProcedureStep='547',PricingProcedureCounter='547')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "t-10937547",
+  "SalesOrderItem": "937547",
+  "PricingProcedureStep": "547",
+  "PricingProcedureCounter": "547",
+  "ConditionType": "7547",
+  "PricingDateTime": "eTime-10937547",
+  "PriceConditionDeterminationDte": "2022-01-21",
+  "ConditionCalculationType": "547",
+  "ConditionBaseValue": 645099921411328.1,
+  "ConditionRateValue": 310732722608423.7,
+  "ConditionCurrency": "37547",
+  "ConditionQuantity": 70903,
+  "ConditionQuantityUnit": "547",
+  "ConditionQuantitySAPUnit": "547",
+  "ConditionQuantityISOUnit": "547",
+  "ConditionCategory": "7",
+  "ConditionIsForStatistics": false,
+  "PricingScaleType": "7",
+  "IsRelevantForAccrual": false,
+  "CndnIsRelevantForInvoiceList": "7",
+  "ConditionOrigin": "7",
+  "IsGroupCondition": "7",
+  "ConditionRecord": "d-10937547",
+  "ConditionSequentialNumber": "547",
+  "TaxCode": "47",
+  "WithholdingTaxCode": "47",
+  "CndnRoundingOffDiffAmount": 562.197,
+  "ConditionAmount": 4726439857636.074,
+  "TransactionCurrency": "37547",
+  "ConditionControl": "7",
+  "ConditionInactiveReason": "7",
+  "ConditionClass": "7",
+  "PrcgProcedureCounterForHeader": "547",
+  "FactorForConditionBasisValue": 33.97865190278872,
+  "StructureCondition": "7",
+  "PeriodFactorForCndnBasisValue": 68.94890515267514,
+  "PricingScaleBasis": "547",
+  "ConditionScaleBasisValue": 411000783872592.7,
+  "ConditionScaleBasisUnit": "547",
+  "ConditionScaleBasisCurrency": "37547",
+  "CndnIsRelevantForIntcoBilling": false,
+  "ConditionIsManuallyChanged": false,
+  "ConditionIsForConfiguration": false,
+  "VariantCondition": "VariantCondition-10937547",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemPrElement
+# @name A_SalesOrderItemPrElement_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemPrElement(SalesOrder='t-10937547',SalesOrderItem='937547',PricingProcedureStep='547',PricingProcedureCounter='547')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemRelatedObject
+# @name A_SalesOrderItemRelatedObject_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemRelatedObject
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemRelatedObject
+# @name A_SalesOrderItemRelatedObject_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemRelatedObject
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "ct-3567767",
+  "SalesOrderItem": "567767",
+  "SDDocRelatedObjectSequenceNmbr": "7767",
+  "SDDocumentRelatedObjectType": "67767",
+  "SDDocRelatedObjectSystem": "SDDocRelatedObjectSystem-3567767",
+  "SDDocRelatedObjectReference1": "SDDocRelatedObjectReference1-3567767",
+  "SDDocRelatedObjectReference2": "SDDocRelatedObjectReference2-3567767",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemRelatedObject
+# @name A_SalesOrderItemRelatedObject_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemRelatedObject(SalesOrder='ct-3567767',SalesOrderItem='567767',SDDocRelatedObjectSequenceNmbr='7767')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "ct-3567767",
+  "SalesOrderItem": "567767",
+  "SDDocRelatedObjectSequenceNmbr": "7767",
+  "SDDocumentRelatedObjectType": "67767",
+  "SDDocRelatedObjectSystem": "SDDocRelatedObjectSystem-3567767",
+  "SDDocRelatedObjectReference1": "SDDocRelatedObjectReference1-3567767",
+  "SDDocRelatedObjectReference2": "SDDocRelatedObjectReference2-3567767",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemRelatedObject
+# @name A_SalesOrderItemRelatedObject_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemRelatedObject(SalesOrder='ct-3567767',SalesOrderItem='567767',SDDocRelatedObjectSequenceNmbr='7767')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderScheduleLine
+# @name A_SalesOrderScheduleLine_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderScheduleLine
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderScheduleLine
+# @name A_SalesOrderScheduleLine_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderScheduleLine
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "e-16353792",
+  "SalesOrderItem": "353792",
+  "ScheduleLine": "3792",
+  "RequestedDeliveryDate": "2005-08-24",
+  "ConfirmedDeliveryDate": "2015-05-03",
+  "OrderQuantityUnit": "792",
+  "OrderQuantitySAPUnit": "792",
+  "OrderQuantityISOUnit": "792",
+  "ScheduleLineOrderQuantity": 3262213186.348,
+  "ConfdOrderQtyByMatlAvailCheck": 5285650562.393,
+  "DeliveredQtyInOrderQtyUnit": 9271783053.973,
+  "OpenConfdDelivQtyInOrdQtyUnit": 6094985166.358,
+  "CorrectedQtyInOrderQtyUnit": 4241171803.992,
+  "DelivBlockReasonForSchedLine": "92"
+}
+
+
+### A_SalesOrderScheduleLine
+# @name A_SalesOrderScheduleLine_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderScheduleLine(SalesOrder='e-16353792',SalesOrderItem='353792',ScheduleLine='3792')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "e-16353792",
+  "SalesOrderItem": "353792",
+  "ScheduleLine": "3792",
+  "RequestedDeliveryDate": "2005-08-24",
+  "ConfirmedDeliveryDate": "2015-05-03",
+  "OrderQuantityUnit": "792",
+  "OrderQuantitySAPUnit": "792",
+  "OrderQuantityISOUnit": "792",
+  "ScheduleLineOrderQuantity": 3262213186.348,
+  "ConfdOrderQtyByMatlAvailCheck": 5285650562.393,
+  "DeliveredQtyInOrderQtyUnit": 9271783053.973,
+  "OpenConfdDelivQtyInOrdQtyUnit": 6094985166.358,
+  "CorrectedQtyInOrderQtyUnit": 4241171803.992,
+  "DelivBlockReasonForSchedLine": "92"
+}
+
+
+### A_SalesOrderScheduleLine
+# @name A_SalesOrderScheduleLine_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderScheduleLine(SalesOrder='e-16353792',SalesOrderItem='353792',ScheduleLine='3792')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItmSubsqntProcFlow
+# @name A_SalesOrderItmSubsqntProcFlow_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItmSubsqntProcFlow
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItmSubsqntProcFlow
+# @name A_SalesOrderItmSubsqntProcFlow_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItmSubsqntProcFlow
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "low-827847",
+  "SalesOrderItem": "827847",
+  "DocRelationshipUUID": "8278473d-b829-4792-b9e7-62f0f0d80e97",
+  "SubsequentDocument": "ent-827847",
+  "SubsequentDocumentItem": "827847",
+  "SubsequentDocumentCategory": "7847",
+  "ProcessFlowLevel": "47",
+  "RelatedProcFlowDocStsFieldName": "ProcFlowDocStsFieldName-827847",
+  "SDProcessStatus": "7",
+  "AccountingTransferStatus": "7",
+  "PrelimBillingDocumentStatus": "7",
+  "SubsqntDocItmPrecdgDocument": "ent-827847",
+  "SubsqntDocItmPrecdgDocItem": "827847",
+  "SubsqntDocItmPrecdgDocCategory": "7847",
+  "CreationDate": "2012-12-11",
+  "CreationTime": "22:59:53",
+  "LastChangeDate": "2007-11-29",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItmSubsqntProcFlow
+# @name A_SalesOrderItmSubsqntProcFlow_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItmSubsqntProcFlow(SalesOrder='low-827847',SalesOrderItem='827847',DocRelationshipUUID=8278473d-b829-4792-b9e7-62f0f0d80e97)
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "low-827847",
+  "SalesOrderItem": "827847",
+  "DocRelationshipUUID": "8278473d-b829-4792-b9e7-62f0f0d80e97",
+  "SubsequentDocument": "ent-827847",
+  "SubsequentDocumentItem": "827847",
+  "SubsequentDocumentCategory": "7847",
+  "ProcessFlowLevel": "47",
+  "RelatedProcFlowDocStsFieldName": "ProcFlowDocStsFieldName-827847",
+  "SDProcessStatus": "7",
+  "AccountingTransferStatus": "7",
+  "PrelimBillingDocumentStatus": "7",
+  "SubsqntDocItmPrecdgDocument": "ent-827847",
+  "SubsqntDocItmPrecdgDocItem": "827847",
+  "SubsqntDocItmPrecdgDocCategory": "7847",
+  "CreationDate": "2012-12-11",
+  "CreationTime": "22:59:53",
+  "LastChangeDate": "2007-11-29",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItmSubsqntProcFlow
+# @name A_SalesOrderItmSubsqntProcFlow_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItmSubsqntProcFlow(SalesOrder='low-827847',SalesOrderItem='827847',DocRelationshipUUID=8278473d-b829-4792-b9e7-62f0f0d80e97)
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemText
+# @name A_SalesOrderItemText_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemText
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItemText
+# @name A_SalesOrderItemText_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemText
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "t-26958646",
+  "SalesOrderItem": "958646",
+  "Language": "46",
+  "LongTextID": "8646",
+  "LongText": "LongText-26958646",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemText
+# @name A_SalesOrderItemText_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemText(SalesOrder='t-26958646',SalesOrderItem='958646',Language='46',LongTextID='8646')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "t-26958646",
+  "SalesOrderItem": "958646",
+  "Language": "46",
+  "LongTextID": "8646",
+  "LongText": "LongText-26958646",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  },
+  "to_SalesOrderItem": {
+    "SalesOrder": "m-18589787",
+    "SalesOrderItem": "589787"
+  }
+}
+
+
+### A_SalesOrderItemText
+# @name A_SalesOrderItemText_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderItemText(SalesOrder='t-26958646',SalesOrderItem='958646',Language='46',LongTextID='8646')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderHeaderPartner
+# @name A_SalesOrderHeaderPartner_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderHeaderPartner
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderHeaderPartner
+# @name A_SalesOrderHeaderPartner_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderHeaderPartner
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "er-8114145",
+  "PartnerFunction": "45",
+  "PartnerFunctionInternalCode": "45",
+  "Customer": "er-8114145",
+  "Supplier": "er-8114145",
+  "Personnel": "-8114145",
+  "ContactPerson": "on-8114145",
+  "ReferenceBusinessPartner": "er-8114145",
+  "AddressID": "ID-8114145",
+  "VATRegistration": "Registration-8114145",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderHeaderPartner
+# @name A_SalesOrderHeaderPartner_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderHeaderPartner(SalesOrder='er-8114145',PartnerFunction='45')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "er-8114145",
+  "PartnerFunction": "45",
+  "PartnerFunctionInternalCode": "45",
+  "Customer": "er-8114145",
+  "Supplier": "er-8114145",
+  "Personnel": "-8114145",
+  "ContactPerson": "on-8114145",
+  "ReferenceBusinessPartner": "er-8114145",
+  "AddressID": "ID-8114145",
+  "VATRegistration": "Registration-8114145",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderHeaderPartner
+# @name A_SalesOrderHeaderPartner_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderHeaderPartner(SalesOrder='er-8114145',PartnerFunction='45')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderPartnerAddress
+# @name A_SalesOrderPartnerAddress_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderPartnerAddress
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderPartnerAddress
+# @name A_SalesOrderPartnerAddress_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderPartnerAddress
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "s-12293722",
+  "PartnerFunction": "22",
+  "AddressRepresentationCode": "2",
+  "CorrespondenceLanguage": "22",
+  "AddresseeFullName": "AddresseeFullName-12293722",
+  "OrganizationName1": "OrganizationName1-12293722",
+  "OrganizationName2": "OrganizationName2-12293722",
+  "OrganizationName3": "OrganizationName3-12293722",
+  "OrganizationName4": "OrganizationName4-12293722",
+  "CityName": "CityName-12293722",
+  "DistrictName": "DistrictName-12293722",
+  "PostalCode": "e-12293722",
+  "StreetPrefixName1": "StreetPrefixName1-12293722",
+  "StreetPrefixName2": "StreetPrefixName2-12293722",
+  "StreetName": "StreetName-12293722",
+  "StreetSuffixName1": "StreetSuffixName1-12293722",
+  "StreetSuffixName2": "StreetSuffixName2-12293722",
+  "HouseNumber": "r-12293722",
+  "Country": "722",
+  "Region": "722",
+  "FormOfAddress": "3722",
+  "TaxJurisdiction": "iction-12293722",
+  "TransportZone": "e-12293722",
+  "POBox": "x-12293722",
+  "POBoxPostalCode": "e-12293722",
+  "EmailAddress": "EmailAddress-12293722",
+  "MobilePhoneCountry": "722",
+  "MobileNumber": "MobileNumber-12293722",
+  "PhoneNumberCountry": "722",
+  "PhoneNumber": "PhoneNumber-12293722",
+  "PhoneExtensionNumber": "r-12293722",
+  "FaxNumberCountry": "722",
+  "FaxAreaCodeSubscriberNumber": "aCodeSubscriberNumber-12293722",
+  "FaxExtensionNumber": "r-12293722",
+  "to_Partner": {
+    "SalesOrder": "er-8114145",
+    "PartnerFunction": "45"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderPartnerAddress
+# @name A_SalesOrderPartnerAddress_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderPartnerAddress(SalesOrder='s-12293722',PartnerFunction='22',AddressRepresentationCode='2')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "s-12293722",
+  "PartnerFunction": "22",
+  "AddressRepresentationCode": "2",
+  "CorrespondenceLanguage": "22",
+  "AddresseeFullName": "AddresseeFullName-12293722",
+  "OrganizationName1": "OrganizationName1-12293722",
+  "OrganizationName2": "OrganizationName2-12293722",
+  "OrganizationName3": "OrganizationName3-12293722",
+  "OrganizationName4": "OrganizationName4-12293722",
+  "CityName": "CityName-12293722",
+  "DistrictName": "DistrictName-12293722",
+  "PostalCode": "e-12293722",
+  "StreetPrefixName1": "StreetPrefixName1-12293722",
+  "StreetPrefixName2": "StreetPrefixName2-12293722",
+  "StreetName": "StreetName-12293722",
+  "StreetSuffixName1": "StreetSuffixName1-12293722",
+  "StreetSuffixName2": "StreetSuffixName2-12293722",
+  "HouseNumber": "r-12293722",
+  "Country": "722",
+  "Region": "722",
+  "FormOfAddress": "3722",
+  "TaxJurisdiction": "iction-12293722",
+  "TransportZone": "e-12293722",
+  "POBox": "x-12293722",
+  "POBoxPostalCode": "e-12293722",
+  "EmailAddress": "EmailAddress-12293722",
+  "MobilePhoneCountry": "722",
+  "MobileNumber": "MobileNumber-12293722",
+  "PhoneNumberCountry": "722",
+  "PhoneNumber": "PhoneNumber-12293722",
+  "PhoneExtensionNumber": "r-12293722",
+  "FaxNumberCountry": "722",
+  "FaxAreaCodeSubscriberNumber": "aCodeSubscriberNumber-12293722",
+  "FaxExtensionNumber": "r-12293722",
+  "to_Partner": {
+    "SalesOrder": "er-8114145",
+    "PartnerFunction": "45"
+  },
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderPartnerAddress
+# @name A_SalesOrderPartnerAddress_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderPartnerAddress(SalesOrder='s-12293722',PartnerFunction='22',AddressRepresentationCode='2')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SlsOrdPaymentPlanItemDetails
+# @name A_SlsOrdPaymentPlanItemDetails_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SlsOrdPaymentPlanItemDetails
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SlsOrdPaymentPlanItemDetails
+# @name A_SlsOrdPaymentPlanItemDetails_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SlsOrdPaymentPlanItemDetails
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "s-12852599",
+  "PaymentPlanItem": "852599",
+  "PaymentPlan": "n-12852599",
+  "ElectronicPaymentType": "2599",
+  "ElectronicPayment": "lectronicPayment-12852599",
+  "EPaytValidityStartDate": "2021-10-11",
+  "EPaytValidityEndDate": "2019-01-22",
+  "ElectronicPaymentHolderName": "ElectronicPaymentHolderName-12852599",
+  "AuthorizedAmountInAuthznCrcy": 3244989893494.728,
+  "AuthorizationCurrency": "52599",
+  "AuthorizationByDigitalPaytSrvc": "c-12852599",
+  "AuthorizationByAcquirer": "quirer-12852599",
+  "AuthorizationDate": "2004-11-28",
+  "AuthorizationTime": "22:59:53",
+  "AuthorizationStatusName": "AuthorizationStatusName-12852599",
+  "EPaytByDigitalPaymentSrvc": "gitalPaymentSrvc-12852599",
+  "ElectronicPaymentCallStatus": "9",
+  "EPaytAuthorizationResult": "9",
+  "EPaytToBeAuthorizedAmount": 1648771893075.614,
+  "EPaytAuthorizationIsExpired": false,
+  "EPaytAmountIsChanged": false,
+  "PreauthorizationIsRequested": false,
+  "PaymentServiceProvider": "2599",
+  "PaymentByPaymentServicePrvdr": "PaymentByPaymentServicePrvdr-12852599",
+  "TransactionByPaytSrvcPrvdr": "TransactionByPaytSrvcPrvdr-12852599",
+  "MerchantByClearingHouse": "gHouse-12852599",
+  "PaymentCardAuthznRelationID": "PaymentCardAuthznRelationID-12852599",
+  "MaximumToBeAuthorizedAmount": 4236956300896.54,
+  "PaytPlnForAuthorizationItem": "m-12852599",
+  "PaytPlnItmForAuthorizationItem": "852599",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SlsOrdPaymentPlanItemDetails
+# @name A_SlsOrdPaymentPlanItemDetails_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SlsOrdPaymentPlanItemDetails(SalesOrder='s-12852599',PaymentPlanItem='852599')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "s-12852599",
+  "PaymentPlanItem": "852599",
+  "PaymentPlan": "n-12852599",
+  "ElectronicPaymentType": "2599",
+  "ElectronicPayment": "lectronicPayment-12852599",
+  "EPaytValidityStartDate": "2021-10-11",
+  "EPaytValidityEndDate": "2019-01-22",
+  "ElectronicPaymentHolderName": "ElectronicPaymentHolderName-12852599",
+  "AuthorizedAmountInAuthznCrcy": 3244989893494.728,
+  "AuthorizationCurrency": "52599",
+  "AuthorizationByDigitalPaytSrvc": "c-12852599",
+  "AuthorizationByAcquirer": "quirer-12852599",
+  "AuthorizationDate": "2004-11-28",
+  "AuthorizationTime": "22:59:53",
+  "AuthorizationStatusName": "AuthorizationStatusName-12852599",
+  "EPaytByDigitalPaymentSrvc": "gitalPaymentSrvc-12852599",
+  "ElectronicPaymentCallStatus": "9",
+  "EPaytAuthorizationResult": "9",
+  "EPaytToBeAuthorizedAmount": 1648771893075.614,
+  "EPaytAuthorizationIsExpired": false,
+  "EPaytAmountIsChanged": false,
+  "PreauthorizationIsRequested": false,
+  "PaymentServiceProvider": "2599",
+  "PaymentByPaymentServicePrvdr": "PaymentByPaymentServicePrvdr-12852599",
+  "TransactionByPaytSrvcPrvdr": "TransactionByPaytSrvcPrvdr-12852599",
+  "MerchantByClearingHouse": "gHouse-12852599",
+  "PaymentCardAuthznRelationID": "PaymentCardAuthznRelationID-12852599",
+  "MaximumToBeAuthorizedAmount": 4236956300896.54,
+  "PaytPlnForAuthorizationItem": "m-12852599",
+  "PaytPlnItmForAuthorizationItem": "852599",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SlsOrdPaymentPlanItemDetails
+# @name A_SlsOrdPaymentPlanItemDetails_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SlsOrdPaymentPlanItemDetails(SalesOrder='s-12852599',PaymentPlanItem='852599')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderPrecdgProcFlow
+# @name A_SalesOrderPrecdgProcFlow_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderPrecdgProcFlow
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderPrecdgProcFlow
+# @name A_SalesOrderPrecdgProcFlow_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderPrecdgProcFlow
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "w-14564235",
+  "DocRelationshipUUID": "14564235-5ab3-4617-a4d9-fe62692743e9",
+  "PrecedingDocument": "t-14564235",
+  "PrecedingDocumentCategory": "4235",
+  "ProcessFlowLevel": "35",
+  "OverallSDProcessStatus": "5",
+  "CreationDate": "2009-03-02",
+  "CreationTime": "22:59:53",
+  "LastChangeDate": "2017-11-04",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderPrecdgProcFlow
+# @name A_SalesOrderPrecdgProcFlow_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderPrecdgProcFlow(SalesOrder='w-14564235',DocRelationshipUUID=14564235-5ab3-4617-a4d9-fe62692743e9)
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "w-14564235",
+  "DocRelationshipUUID": "14564235-5ab3-4617-a4d9-fe62692743e9",
+  "PrecedingDocument": "t-14564235",
+  "PrecedingDocumentCategory": "4235",
+  "ProcessFlowLevel": "35",
+  "OverallSDProcessStatus": "5",
+  "CreationDate": "2009-03-02",
+  "CreationTime": "22:59:53",
+  "LastChangeDate": "2017-11-04",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderPrecdgProcFlow
+# @name A_SalesOrderPrecdgProcFlow_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderPrecdgProcFlow(SalesOrder='w-14564235',DocRelationshipUUID=14564235-5ab3-4617-a4d9-fe62692743e9)
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderHeaderPrElement
+# @name A_SalesOrderHeaderPrElement_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderHeaderPrElement
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderHeaderPrElement
+# @name A_SalesOrderHeaderPrElement_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderHeaderPrElement
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "t-11575953",
+  "PricingProcedureStep": "953",
+  "PricingProcedureCounter": "953",
+  "ConditionType": "5953",
+  "PricingDateTime": "eTime-11575953",
+  "PriceConditionDeterminationDte": "2011-03-31",
+  "ConditionCalculationType": "953",
+  "ConditionBaseValue": 353745166255386.5,
+  "ConditionRateValue": 901043197585868.9,
+  "ConditionCurrency": "75953",
+  "ConditionQuantity": 55586,
+  "ConditionQuantityUnit": "953",
+  "ConditionQuantitySAPUnit": "953",
+  "ConditionQuantityISOUnit": "953",
+  "ConditionCategory": "3",
+  "ConditionIsForStatistics": false,
+  "PricingScaleType": "3",
+  "ConditionOrigin": "3",
+  "IsGroupCondition": "3",
+  "ConditionRecord": "d-11575953",
+  "ConditionSequentialNumber": "953",
+  "TaxCode": "53",
+  "WithholdingTaxCode": "53",
+  "CndnRoundingOffDiffAmount": 259.256,
+  "ConditionAmount": 117256740492.868,
+  "TransactionCurrency": "75953",
+  "ConditionControl": "3",
+  "ConditionInactiveReason": "3",
+  "ConditionClass": "3",
+  "PrcgProcedureCounterForHeader": "953",
+  "FactorForConditionBasisValue": 56.959012413686835,
+  "StructureCondition": "3",
+  "PeriodFactorForCndnBasisValue": 95.10067670851055,
+  "PricingScaleBasis": "953",
+  "ConditionScaleBasisValue": 172669275630978.44,
+  "ConditionScaleBasisUnit": "953",
+  "ConditionScaleBasisCurrency": "75953",
+  "CndnIsRelevantForIntcoBilling": false,
+  "ConditionIsManuallyChanged": false,
+  "ConditionIsForConfiguration": false,
+  "VariantCondition": "VariantCondition-11575953",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderHeaderPrElement
+# @name A_SalesOrderHeaderPrElement_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderHeaderPrElement(SalesOrder='t-11575953',PricingProcedureStep='953',PricingProcedureCounter='953')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "t-11575953",
+  "PricingProcedureStep": "953",
+  "PricingProcedureCounter": "953",
+  "ConditionType": "5953",
+  "PricingDateTime": "eTime-11575953",
+  "PriceConditionDeterminationDte": "2011-03-31",
+  "ConditionCalculationType": "953",
+  "ConditionBaseValue": 353745166255386.5,
+  "ConditionRateValue": 901043197585868.9,
+  "ConditionCurrency": "75953",
+  "ConditionQuantity": 55586,
+  "ConditionQuantityUnit": "953",
+  "ConditionQuantitySAPUnit": "953",
+  "ConditionQuantityISOUnit": "953",
+  "ConditionCategory": "3",
+  "ConditionIsForStatistics": false,
+  "PricingScaleType": "3",
+  "ConditionOrigin": "3",
+  "IsGroupCondition": "3",
+  "ConditionRecord": "d-11575953",
+  "ConditionSequentialNumber": "953",
+  "TaxCode": "53",
+  "WithholdingTaxCode": "53",
+  "CndnRoundingOffDiffAmount": 259.256,
+  "ConditionAmount": 117256740492.868,
+  "TransactionCurrency": "75953",
+  "ConditionControl": "3",
+  "ConditionInactiveReason": "3",
+  "ConditionClass": "3",
+  "PrcgProcedureCounterForHeader": "953",
+  "FactorForConditionBasisValue": 56.959012413686835,
+  "StructureCondition": "3",
+  "PeriodFactorForCndnBasisValue": 95.10067670851055,
+  "PricingScaleBasis": "953",
+  "ConditionScaleBasisValue": 172669275630978.44,
+  "ConditionScaleBasisUnit": "953",
+  "ConditionScaleBasisCurrency": "75953",
+  "CndnIsRelevantForIntcoBilling": false,
+  "ConditionIsManuallyChanged": false,
+  "ConditionIsForConfiguration": false,
+  "VariantCondition": "VariantCondition-11575953",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderHeaderPrElement
+# @name A_SalesOrderHeaderPrElement_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderHeaderPrElement(SalesOrder='t-11575953',PricingProcedureStep='953',PricingProcedureCounter='953')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderRelatedObject
+# @name A_SalesOrderRelatedObject_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderRelatedObject
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderRelatedObject
+# @name A_SalesOrderRelatedObject_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderRelatedObject
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "t-18000902",
+  "SDDocRelatedObjectSequenceNmbr": "0902",
+  "SDDocumentRelatedObjectType": "00902",
+  "SDDocRelatedObjectSystem": "SDDocRelatedObjectSystem-18000902",
+  "SDDocRelatedObjectReference1": "SDDocRelatedObjectReference1-18000902",
+  "SDDocRelatedObjectReference2": "SDDocRelatedObjectReference2-18000902",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderRelatedObject
+# @name A_SalesOrderRelatedObject_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderRelatedObject(SalesOrder='t-18000902',SDDocRelatedObjectSequenceNmbr='0902')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "t-18000902",
+  "SDDocRelatedObjectSequenceNmbr": "0902",
+  "SDDocumentRelatedObjectType": "00902",
+  "SDDocRelatedObjectSystem": "SDDocRelatedObjectSystem-18000902",
+  "SDDocRelatedObjectReference1": "SDDocRelatedObjectReference1-18000902",
+  "SDDocRelatedObjectReference2": "SDDocRelatedObjectReference2-18000902",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderRelatedObject
+# @name A_SalesOrderRelatedObject_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderRelatedObject(SalesOrder='t-18000902',SDDocRelatedObjectSequenceNmbr='0902')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderSubsqntProcFlow
+# @name A_SalesOrderSubsqntProcFlow_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderSubsqntProcFlow
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderSubsqntProcFlow
+# @name A_SalesOrderSubsqntProcFlow_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderSubsqntProcFlow
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "w-18552195",
+  "DocRelationshipUUID": "18552195-e88c-4bc5-b2b9-66eee1106cf6",
+  "SubsequentDocument": "t-18552195",
+  "SubsequentDocumentCategory": "2195",
+  "ProcessFlowLevel": "95",
+  "OverallSDProcessStatus": "5",
+  "CreationDate": "2016-12-09",
+  "CreationTime": "22:59:53",
+  "LastChangeDate": "2015-09-04",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderSubsqntProcFlow
+# @name A_SalesOrderSubsqntProcFlow_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderSubsqntProcFlow(SalesOrder='w-18552195',DocRelationshipUUID=18552195-e88c-4bc5-b2b9-66eee1106cf6)
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "w-18552195",
+  "DocRelationshipUUID": "18552195-e88c-4bc5-b2b9-66eee1106cf6",
+  "SubsequentDocument": "t-18552195",
+  "SubsequentDocumentCategory": "2195",
+  "ProcessFlowLevel": "95",
+  "OverallSDProcessStatus": "5",
+  "CreationDate": "2016-12-09",
+  "CreationTime": "22:59:53",
+  "LastChangeDate": "2015-09-04",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderSubsqntProcFlow
+# @name A_SalesOrderSubsqntProcFlow_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderSubsqntProcFlow(SalesOrder='w-18552195',DocRelationshipUUID=18552195-e88c-4bc5-b2b9-66eee1106cf6)
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderText
+# @name A_SalesOrderText_GET
+GET {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderText
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderText
+# @name A_SalesOrderText_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderText
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "xt-6375566",
+  "Language": "66",
+  "LongTextID": "5566",
+  "LongText": "LongText-6375566",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderText
+# @name A_SalesOrderText_PATCH
+PATCH {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderText(SalesOrder='xt-6375566',Language='66',LongTextID='5566')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "xt-6375566",
+  "Language": "66",
+  "LongTextID": "5566",
+  "LongText": "LongText-6375566",
+  "to_SalesOrder": {
+    "SalesOrder": "er-8236835"
+  }
+}
+
+
+### A_SalesOrderText
+# @name A_SalesOrderText_DELETE
+DELETE {{server}}/odata/v4/zapi-sales-order-srv/A_SalesOrderText(SalesOrder='xt-6375566',Language='66',LongTextID='5566')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### rejectApprovalRequest
+# @name rejectApprovalRequest_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/rejectApprovalRequest
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "SalesOrder-20429588"
+}
+
+
+### releaseApprovalRequest
+# @name releaseApprovalRequest_POST
+POST {{server}}/odata/v4/zapi-sales-order-srv/releaseApprovalRequest
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "SalesOrder": "SalesOrder-13543661"
+}

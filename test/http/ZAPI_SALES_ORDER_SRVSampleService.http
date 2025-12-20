@@ -1,0 +1,15 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### A_SalesOrder
+# @name A_SalesOrder_GET
+GET {{server}}/odata/v4/zapi-sales-order-srvsample/A_SalesOrder
+Authorization: Basic {{username}}:{{password}}
+
+
+### A_SalesOrderItem
+# @name A_SalesOrderItem_GET
+GET {{server}}/odata/v4/zapi-sales-order-srvsample/A_SalesOrderItem
+Authorization: Basic {{username}}:{{password}}

@@ -1,0 +1,19 @@
+{
+  "requires": {
+    "auth": {
+      "kind": "mocked",
+      "users": {
+        "employee@test.com": {
+          "password": "initial",
+          "ID": "employee@test.com",
+          "roles": ["Employee"]
+        },
+        "manager@test.com": {
+          "password": "initial",
+          "ID": "manager@test.com",
+          "roles": ["Manager"]
+        }
+      }
+    }
+  }
+}
