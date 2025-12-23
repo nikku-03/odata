@@ -1,7 +1,7 @@
 {
   "_version": "1.76.0",
   "sap.app": {
-    "id": "project1",
+    "id": "salesorder",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.20.0",
-      "toolsId": "6e01c172-227f-4f1d-aa14-b560f536538e"
+      "toolsId": "c0970344-b6ce-42b2-9442-59a6fadfa8de"
     },
     "dataSources": {
       "mainService": {
@@ -60,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "project1.i18n.i18n"
+          "bundleName": "salesorder.i18n.i18n"
         }
       },
       "": {
@@ -85,33 +85,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "OrdersList",
-          "target": "OrdersList"
+          "name": "SalesOrderApprovalList",
+          "target": "SalesOrderApprovalList"
         },
         {
-          "pattern": "Orders({key}):?query:",
-          "name": "OrdersObjectPage",
-          "target": "OrdersObjectPage"
-        },
-        {
-          "pattern": "Orders({key})/items({key2}):?query:",
-          "name": "OrderItemsObjectPage",
-          "target": "OrderItemsObjectPage"
+          "pattern": "SalesOrderApproval({key}):?query:",
+          "name": "SalesOrderApprovalObjectPage",
+          "target": "SalesOrderApprovalObjectPage"
         }
       ],
       "targets": {
-        "OrdersList": {
+        "SalesOrderApprovalList": {
           "type": "Component",
-          "id": "OrdersList",
+          "id": "SalesOrderApprovalList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/Orders",
+              "contextPath": "/SalesOrderApproval",
               "variantManagement": "Page",
               "navigation": {
-                "Orders": {
+                "SalesOrderApproval": {
                   "detail": {
-                    "route": "OrdersObjectPage"
+                    "route": "SalesOrderApprovalObjectPage"
                   }
                 }
               },
@@ -125,32 +120,14 @@
             }
           }
         },
-        "OrdersObjectPage": {
+        "SalesOrderApprovalObjectPage": {
           "type": "Component",
-          "id": "OrdersObjectPage",
+          "id": "SalesOrderApprovalObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Orders",
-              "navigation": {
-                "items": {
-                  "detail": {
-                    "route": "OrderItemsObjectPage"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "OrderItemsObjectPage": {
-          "type": "Component",
-          "id": "OrderItemsObjectPage",
-          "name": "sap.fe.templates.ObjectPage",
-          "options": {
-            "settings": {
-              "editableHeaderContent": false,
-              "contextPath": "/Orders/items"
+              "contextPath": "/SalesOrderApproval"
             }
           }
         }

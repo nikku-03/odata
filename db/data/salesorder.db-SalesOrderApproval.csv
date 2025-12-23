@@ -1,0 +1,5 @@
+ID,salesOrderID,salesOrg,soldToParty,netValue,currency,approvalStatus,approvalComment,createdAt,createdBy,modifiedAt,modifiedBy
+24f16d5c-7fa9-4a0d-9501-c34c113de6e0,2,1234,17100003,1000000,INR,PENDING
+25f16d5c-7fa9-4a0d-9501-c34c113de6e0,23,5678,19800023,3000000,INR,PENDING
+26f16d5c-7fa9-4a0d-9501-c34c113de6e0,24,9123,17600045,2000000,INR,PENDING
+27f16d5c-7fa9-4a0d-9501-c34c113de6e0,3,4567,15400067,500000,INR,PENDING

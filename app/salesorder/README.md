@@ -1,25 +1,24 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Fri Dec 19 2025 16:12:07 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Sat Dec 20 2025 06:48:02 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>SAP Fiori Application Generator|
 |**App Generator Version**<br>1.20.0|
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local CAP|
 |**Service URL**<br>http://localhost:4004/odata/v4/catalog/|
-|**Module Name**<br>project1|
-|**Application Title**<br>App Title|
+|**Module Name**<br>salesorder|
+|**Application Title**<br>salesorder|
 |**Namespace**<br>|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.143.2|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
-|**Main Entity**<br>Orders|
-|**Navigation Entity**<br>items|
+|**Main Entity**<br>SalesOrderApproval|
 
-## project1
+## salesorder
 
 An SAP Fiori application.
 
@@ -27,7 +26,7 @@ An SAP Fiori application.
 
 -   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  To launch the generated app, start your CAP project:  and navigate to the following location in your browser:
 
-http://localhost:4004/project1/index.html
+http://localhost:4004/salesorder/index.html
 
 #### Pre-requisites:
 
